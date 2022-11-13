@@ -1,0 +1,25 @@
+﻿<Window
+    x:Class="Playground.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Playground"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page x:Name="page">
+        <StackPanel Spacing="5"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Button x:Name="openDialog"
+                    Content="Open dialog from code behind"
+                    Click="openDialog_Click"/>
+            <Button x:Name="openDialogAlt"
+                    Content="Open dialog from XAML"
+                    Click="openDialogAlt_Click" />
+            <ContentDialog x:Name="dialog"
+                           Title="Dialog from XAML"
+                           PrimaryButtonText="Ok">
+            </ContentDialog>
+        </StackPanel>
+    </Page>
+</Window>
